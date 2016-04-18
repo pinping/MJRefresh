@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  MJRefreshExample
+
+  Created by pinping on 4/18/16.
+  Copyright © 2016 小码哥. All rights reserved.
+*/
+
+"Today" = "Today";
+"Last updated" = "Last updated";
+"Last updated : No record" = "Last updated : No record";
