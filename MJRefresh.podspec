@@ -7,12 +7,14 @@ Pod::Spec.new do |s|
     s.authors      = {'MJ Lee' => '199109106@qq.com'}
     s.platform     = :ios, '6.0'
     s.source       = {:git => 'https://github.com/CoderMJLee/MJRefresh.git', :tag => s.version}
-    s.source_files = 'MJRefresh/**/*.{h,m,lproj}'
-    s.resource_bundles = {
-      "MJRefresh": [
-        "*.lproj"
-      ]
+    s.source_files = 'MJRefresh/**/*.{h,m}'
+    s.resource = {
+      # "MJRefresh": [
+      #   "*.lproj"
+      # ]
+      'MJRefresh/**/*.{lproj}'
+      'MJRefresh/MJRefresh.bundle'
     }
-    s.resource     = 'MJRefresh/MJRefresh.bundle'
+    # s.resource     = 'MJRefresh/MJRefresh.bundle'
     s.requires_arc = true
 end
