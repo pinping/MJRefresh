@@ -88,7 +88,7 @@
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
         if ([cmp1 day] == [cmp2 day]) { // 今天
 //            formatter.dateFormat = @"Today HH:mm";
-            formatter.dateFormat = [NSLocalizedString(@"Today",nil) stringByAppendingFormat:@"HH:mm"];
+            formatter.dateFormat = [NSLocalizedStringFromTableInBundle(@"Today", @"Localizable", [NSBundle mainBundle], nil) stringByAppendingFormat:@"HH:mm"];
             
         } else if ([cmp1 year] == [cmp2 year]) { // 今年
             formatter.dateFormat = @"MM-dd HH:mm";
@@ -98,9 +98,9 @@
         NSString *time = [formatter stringFromDate:lastUpdatedTime];
         
         // 3.显示日期
-        self.lastUpdatedTimeLabel.text = [NSLocalizedString(@"Last updated : ",nil) stringByAppendingFormat:@"%@", time];
+        self.lastUpdatedTimeLabel.text = [NSLocalizedStringFromTableInBundle(@"Last updated", @"Localizable", [NSBundle mainBundle], nil) stringByAppendingFormat:@"%@", time];
     } else {
-        self.lastUpdatedTimeLabel.text = NSLocalizedString(@"Last updated : No record",nil);
+        self.lastUpdatedTimeLabel.text = NSLocalizedStringFromTableInBundle(@"Last updated : No record", @"Localizable", [NSBundle mainBundle], nil);
     }
 }
 

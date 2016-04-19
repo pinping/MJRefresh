@@ -6,6 +6,6 @@
   Copyright © 2016 小码哥. All rights reserved.
 */
 
-"Today" = "Today";
-"Last updated" = "Last updated";
-"Last updated : No record" = "Last updated : No record";
+"Today" = "今天";
+"Last updated" = "最後更新 : ";
+"Last updated : No record" = "最後更新 : 沒有記錄";
