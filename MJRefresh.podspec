@@ -8,11 +8,11 @@ Pod::Spec.new do |s|
     s.platform     = :ios, '6.0'
     s.source       = {:git => 'https://github.com/CoderMJLee/MJRefresh.git', :tag => s.version}
     s.source_files = 'MJRefresh/**/*.{h,m}'
-    s.resource_bundles = {
-      'MJRefresh' => ['MJRefreshExample/*.lproj'],
-      'MJRefresh' => ['MJRefresh/MJRefresh.bundle']
-    }
+    # s.resource_bundles = {
+    #   'MJRefresh' => ['MJRefreshExample/*.lproj'],
+    #   'MJRefresh' => ['MJRefresh/MJRefresh.bundle']
+    # }
     # s.resource     = 'MJRefresh/MJRefresh.bundle'
-    # s.resources = ['Images/*.png', 'MJRefresh/MJRefresh.bundle']
+    s.resources = ['MJRefreshExample/*.lproj', 'MJRefresh/MJRefresh.bundle']
     s.requires_arc = true
 end
