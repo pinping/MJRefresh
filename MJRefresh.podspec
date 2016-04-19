@@ -9,13 +9,10 @@ Pod::Spec.new do |s|
     s.source       = {:git => 'https://github.com/CoderMJLee/MJRefresh.git', :tag => s.version}
     s.source_files = 'MJRefresh/**/*.{h,m}'
     s.resource_bundles = {
-        "MJRefresh": [
-      "*.lproj"
-    ]
         
-    #   'MJRefresh' => ['MJRefreshExample/*.{lproj}'],
-    #   'MJRefresh' => ['MJRefresh/MJRefresh.bundle']
+      'MJRefresh' = ['MJRefreshExample/*.{lproj}'],
+      'MJRefresh' = ['MJRefresh/MJRefresh.bundle']
     }
-    s.resource     = 'MJRefresh/MJRefresh.bundle'
+    # s.resource     = 'MJRefresh/MJRefresh.bundle'
     s.requires_arc = true
 end
