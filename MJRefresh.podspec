@@ -13,6 +13,6 @@ Pod::Spec.new do |s|
     #   'MJRefresh' => ['MJRefresh/MJRefresh.bundle']
     # }
     # s.resource     = 'MJRefresh/MJRefresh.bundle'
-    s.resources = ['MJRefreshExample/*.lproj', 'MJRefresh/*.lproj', 'MJRefresh/MJRefresh.bundle']
+    s.resources = ['MJRefreshExample/*.lproj', 'MJRefresh/MJRefresh.bundle']
     s.requires_arc = true
 end
